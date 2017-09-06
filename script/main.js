@@ -1,51 +1,55 @@
 $(document).ready(function(){
+
+  function removeFocus() {
+    $('.menu .btn').each( function(){
+      var $this = $(this);
+      if( $this.hasClass('focus')){
+        $this.removeClass('focus');
+      }
+    });
+  };//removeFocus
+
+  $(".opening").click(function(){
+    $(".my-sections").removeClass('open-para');
+    removeFocus();
+  });
+
   $('.my-button').click(function(e) {
     var str = $( this ).text();
-    $( "#inner" ).text( str );
     console.log('working');
-
     // e.preventDefault();
     $(".focus").removeClass('focus');
     $(this).addClass('focus');
-
     $(".open-para").removeClass("open-para");
 //a setTimeout has to be used as  delay() can only be used on animations
     setTimeout(function(){
        $('#' + str).addClass("open-para")
-      //  $("#one").addClass("open-para");
      }, 100);
-
-    //$('#one').attr('class', '')
   });
 });
 
-// $(document).ready(function(){
-//   $('#btn-two').click(function(e) {
-//     console.log('working');
-//
-//     // e.preventDefault();
-//     $(".focus").removeClass('focus');
-//     $(this).addClass('focus');
-//
-//     $(".open-para").removeClass("open-para");
-// //a setTimeout has to be used as  delay() can only be used on animations
-//     setTimeout(function(){
-//        $("#two").addClass("open-para");
-//      }, 100);
-//
-//     //$('#one').attr('class', '')
-//   });
-// });
+
+//draw Contact Box on scroll
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
+    if (scroll >= 450) {
+      $('#Layer_3').removeClass('static').addClass('motion');
+      $('#text_1').addClass('text1');
+      $('#text_2').addClass('text2');
+      $('#text_3').addClass('text3');
+      $('#text_4').addClass('text4');
+    }
+});
 
 
 
-// $(document).ready(function(){
-//   $("#btn-one").click(function(e){
-//     e.preventDefault();
-//     $(this).addClass('focus');
-//   });
-// });
+
+
+// var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
 //
-// $("#btn-one").click(function() {
-//   $("open-para").toggle(100);
-// });
+// 	// build scenes
+// 	new ScrollMagic.Scene({triggerElement: "#Layer_3"})
+// 					.setClassToggle("static", "motion") // add class toggle
+// 					.addIndicators() // add indicators (requires plugin)
+// 					.addTo(controller);

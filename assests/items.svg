@@ -1,0 +1,15 @@
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" width="725.7" height="488.5" viewBox="0 0 725.7 488.5">
+  <title>items</title>
+
+
+  <polyline points="1.5 0 1.5 320.5 223.5 320.5 223.5 120.5 723.5 120.5 723.5 170.5 323.5 170.5 723.5 170.5  723.5 220.5 323.5 220.5 723.5 220.5 723.5 270.5 323.5 270.5 723.5 270.5 724 320.5 323.5 320.5 724 320.5 724.2 488.5" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+
+
+<g class=“contact-info”>
+    <text transform="translate(232 158.8)" font-size="42" font-family="Myriad Pro">name</text>
+    <text transform="translate(233.7 208.8)" font-size="42" font-family="Myriad Pro">number</text>
+    <text transform="translate(233.7 258.8)" font-size="42" font-family="Myriad Pro">email</text>
+    <text transform="translate(233.7 308.8)" font-size="42" font-family="Myriad Pro">message</text>
+    <text transform="translate(223.5 100.3)" font-size="42" font-family="Myriad Pro">C<tspan x="23.9" y="0">o</tspan><tspan x="47" y="0">n</tspan><tspan x="70.1" y="0">ta</tspan><tspan x="104.2" y="0">c</tspan><tspan x="123.6" y="0">t</tspan></text>
+  </g>
+  <text x="-126" y="-280"/></svg>
